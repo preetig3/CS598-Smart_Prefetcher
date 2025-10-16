@@ -82,8 +82,6 @@ def verify_labels(bucket_name, aws_access_key_id, aws_secret_access_key, num_sam
         region_name='us-east-1'
     )
     
-    print(f"\n🔍 Verifying labels for {num_samples} images:")
-    print("-" * 40)
     
     for i in range(1, num_samples + 1):
         s3_key = f'cifar10/images/{i}.raw'
